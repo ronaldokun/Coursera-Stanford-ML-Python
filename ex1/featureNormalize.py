@@ -28,4 +28,13 @@ def featureNormalize(X):
 
 # ============================================================
 
+    X_norm = np.copy(X)
+
+    mu = np.mean(X, axis=0, dtype=np.float32)
+
+    sigma = np.std(X, axis=0, dtype=np.float32)
+
+    X_norm = (X_norm - mu) * (1./sigma)
+
+
     return X_norm, mu, sigma

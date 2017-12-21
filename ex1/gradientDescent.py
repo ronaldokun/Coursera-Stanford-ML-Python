@@ -1,4 +1,5 @@
 from computeCost import computeCost
+import numpy as np
 
 
 def gradientDescent(X, y, theta, alpha, num_iters):
@@ -24,7 +25,10 @@ def gradientDescent(X, y, theta, alpha, num_iters):
 
         # ============================================================
 
+        theta -= (alpha/m) * (X.T.dot(X.dot(theta) - y))
+
         # Save the cost J in every iteration
         J_history.append(computeCost(X, y, theta))
+
 
     return theta, J_history

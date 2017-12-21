@@ -21,7 +21,8 @@ from show import show
 #  in this exericse:
 #
 #     warmUpExercise.py
-#     plotData.py
+#
+# plotData.py
 #     gradientDescent.py
 #     computeCost.py
 #     gradientDescentMulti.py

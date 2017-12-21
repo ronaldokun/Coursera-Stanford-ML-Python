@@ -21,3 +21,8 @@ def plotData(data):
     plt.figure()  # open a new figure window
 
 # ============================================================
+
+    plt.plot(data[:,0], data[:, 1], 'rx', 'MarkerSize', 10)
+    plt.xlabel("Population of City in 10,000s")
+    plt.ylabel("Profit in $10,000s")
+    #plt.show()
